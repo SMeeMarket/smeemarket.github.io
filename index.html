@@ -2,11 +2,27 @@
 <html>
 <head>
 <title>SMee Market</title>
+<link rel="shorcut icon" href="../images/logo.png" title="" type="" />
 <meta name="theme-color" content="#ff0000">
 </head>
-<body>
+<body style="background-color:var(--bgmode);text-align:center;color:var(--textmode)" id="mode">
+<img src="../images/logo.png" alt="" width="200px" style=""/>
 <h1>Hello World!</h1>
 <h2>I'm SMee. What can I help you?</h2>
 <h3>Welcome to SMee Market...</h3>
+<button type="button" onclick="dark()">Dark Mood</button>
+
 </body>
+<script type="text/javascript" charset="utf-8">
+  function dark(){
+    let x = y++;
+    if (x == 2){
+    document.getElementById('mode').style.setProperty('--bgmode','black');
+    document.getElementById('mode').style.setProperty('--textmode','white');
+    }else{
+    document.getElementById('mode').style.setProperty('--bgmode','white');
+    document.getElementById('mode').style.setProperty('--textmode','black');
+    }
+  }
+</script>
 </html>
