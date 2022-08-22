@@ -133,6 +133,7 @@
       .swal2-popup.swal2-toast .swal2-html-container {
         margin: 0.5em 1em;
         padding: 0;
+        overflow: initial;
         font-size: 1em;
         text-align: initial;
       }
@@ -1752,7 +1753,16 @@
                   ရုံးပိတ်ရက်များ
                 </h6>
                 <div style="padding: 5px; padding-top: 0px">
-                  <div id="show_holiday" style="margin-bottom: 10px"></div>
+                  <div id="show_holiday" style="margin-bottom: 10px">
+                    <ul>
+                      <li>08-10-2022 (သီတင်းကျွတ်ရုံးပိတ်ရက်များ)</li>
+                      <li>09-10-2022 (သီတင်းကျွတ်ရုံးပိတ်ရက်များ)</li>
+                      <li>10-10-2022 (သီတင်းကျွတ်ရုံးပိတ်ရက်များ)</li>
+                      <li>06-11-2022 (တန်ဆောင်တိုင်ပိတ်ရက်များ)</li>
+                      <li>07-11-2022 (တန်ဆောင်တိုင်ပိတ်ရက်များ)</li>
+                      <li>17-11-2022 (အမျိုးသားအောင်ပွဲနေ့)</li>
+                    </ul>
+                  </div>
                   <label
                     >** စနေ၊ တနင်္ဂနွေနေ့များသည်
                     ပုံမှန်ရုံးပိတ်ရက်များဖြစ်ပါသည်။
@@ -1807,7 +1817,7 @@
                           readonly=""
                           id="appdate"
                           name="appdate"
-                          class="form-control calander"
+                          class="form-control calander hasDatepicker"
                           value=""
                           style="background-color: #f5faff"
                           autocomplete="off"
@@ -1821,7 +1831,229 @@
                         လျှောက်ထားလိုသည့်အချိန် * </label
                       ><br />
                       <div class="col-md-12">
-                        <div id="appointtime" style="padding: 15px"></div>
+                        <div id="appointtime" style="padding: 15px">
+                          <div
+                            class="col-md-12 p-t-5"
+                            style="float: left; margin-top: 10px"
+                          >
+                            <div class="col-md-2" style="float: left">
+                              <label
+                                class="radio-container"
+                                style="font-size: 14px"
+                              >
+                                <input
+                                  type="radio"
+                                  name="apptime"
+                                  id="32"
+                                  value="08:00:00"
+                                  disabled=""
+                                />
+                                <b>8:00 AM</b>
+                              </label>
+                            </div>
+                            <div
+                              class="col-md-9"
+                              style="float: left; margin-left: 0px"
+                            >
+                              (Reserve ဦး‌ရေ -
+                              <label style="color: #fe0a0a">
+                                <b
+                                  ><label style="width: 30px; text-align: right"
+                                    >9</label
+                                  ></b
+                                >
+                                <span class="checkmark"></span
+                              ></label>
+                              ၊ လျှောက်ထားနိုင်သည့်ဦးရေ -
+                              <label style="color: #fe0a0a">
+                                <b
+                                  ><label style="width: 30px; text-align: right"
+                                    >0</label
+                                  ></b
+                                >) <span class="checkmark"></span
+                              ></label>
+                            </div>
+                          </div>
+                          <div
+                            class="col-md-12 p-t-5"
+                            style="float: left; margin-top: 10px"
+                          >
+                            <div class="col-md-2" style="float: left">
+                              <label
+                                class="radio-container"
+                                style="font-size: 14px"
+                              >
+                                <input
+                                  type="radio"
+                                  name="apptime"
+                                  id="33"
+                                  value="09:00:00"
+                                  disabled=""
+                                />
+                                <b>9:00 AM</b>
+                              </label>
+                            </div>
+                            <div
+                              class="col-md-9"
+                              style="float: left; margin-left: 0px"
+                            >
+                              (Reserve ဦး‌ရေ -
+                              <label style="color: #fe0a0a">
+                                <b
+                                  ><label style="width: 30px; text-align: right"
+                                    >14</label
+                                  ></b
+                                >
+                                <span class="checkmark"></span
+                              ></label>
+                              ၊ လျှောက်ထားနိုင်သည့်ဦးရေ -
+                              <label style="color: #fe0a0a">
+                                <b
+                                  ><label style="width: 30px; text-align: right"
+                                    >0</label
+                                  ></b
+                                >) <span class="checkmark"></span
+                              ></label>
+                            </div>
+                          </div>
+                          <div
+                            class="col-md-12 p-t-5"
+                            style="float: left; margin-top: 10px"
+                          >
+                            <div class="col-md-2" style="float: left">
+                              <label
+                                class="radio-container"
+                                style="font-size: 14px"
+                              >
+                                <input
+                                  type="radio"
+                                  name="apptime"
+                                  id="34"
+                                  value="10:00:00"
+                                  disabled=""
+                                />
+                                <b>10:00 AM</b>
+                              </label>
+                            </div>
+                            <div
+                              class="col-md-9"
+                              style="float: left; margin-left: 0px"
+                            >
+                              (Reserve ဦး‌ရေ -
+                              <label style="color: #fe0a0a">
+                                <b
+                                  ><label style="width: 30px; text-align: right"
+                                    >7</label
+                                  ></b
+                                >
+                                <span class="checkmark"></span
+                              ></label>
+                              ၊ လျှောက်ထားနိုင်သည့်ဦးရေ -
+                              <label style="color: #fe0a0a">
+                                <b
+                                  ><label style="width: 30px; text-align: right"
+                                    >0</label
+                                  ></b
+                                >) <span class="checkmark"></span
+                              ></label>
+                            </div>
+                          </div>
+                          <div
+                            class="col-md-12 p-t-5"
+                            style="float: left; margin-top: 10px"
+                          >
+                            <div class="col-md-2" style="float: left">
+                              <label
+                                class="radio-container"
+                                style="font-size: 14px"
+                              >
+                                <input
+                                  type="radio"
+                                  name="apptime"
+                                  id="35"
+                                  value="11:00:00"
+                                  disabled=""
+                                />
+                                <b>11:00 AM</b>
+                              </label>
+                            </div>
+                            <div
+                              class="col-md-9"
+                              style="float: left; margin-left: 0px"
+                            >
+                              (Reserve ဦး‌ရေ -
+                              <label style="color: #fe0a0a">
+                                <b
+                                  ><label style="width: 30px; text-align: right"
+                                    >7</label
+                                  ></b
+                                >
+                                <span class="checkmark"></span
+                              ></label>
+                              ၊ လျှောက်ထားနိုင်သည့်ဦးရေ -
+                              <label style="color: #fe0a0a">
+                                <b
+                                  ><label style="width: 30px; text-align: right"
+                                    >0</label
+                                  ></b
+                                >) <span class="checkmark"></span
+                              ></label>
+                            </div>
+                          </div>
+                          <div
+                            class="col-md-12 p-t-5"
+                            style="float: left; margin-top: 10px"
+                          >
+                            <div class="col-md-2" style="float: left">
+                              <label
+                                class="radio-container"
+                                style="font-size: 14px"
+                              >
+                                <input
+                                  type="radio"
+                                  name="apptime"
+                                  id="36"
+                                  value="12:00:00"
+                                  disabled=""
+                                />
+                                <b>12:00 PM</b>
+                              </label>
+                            </div>
+                            <div
+                              class="col-md-9"
+                              style="float: left; margin-left: 0px"
+                            >
+                              (Reserve ဦး‌ရေ -
+                              <label style="color: #fe0a0a">
+                                <b
+                                  ><label style="width: 30px; text-align: right"
+                                    >1</label
+                                  ></b
+                                >
+                                <span class="checkmark"></span
+                              ></label>
+                              ၊ လျှောက်ထားနိုင်သည့်ဦးရေ -
+                              <label style="color: #fe0a0a">
+                                <b
+                                  ><label style="width: 30px; text-align: right"
+                                    >0</label
+                                  ></b
+                                >) <span class="checkmark"></span
+                              ></label>
+                            </div>
+                          </div>
+                          <div
+                            class="col-md-12 p-t-5"
+                            style="
+                              float: left;
+                              margin-top: 20px;
+                              color: red;
+                              font-weight: bold;
+                            "
+                          >
+                            ** ရွေးချယ်ထားသောရက်အတွက်သတ်မှတ်ဦးရေပြည့်နေပါသည်။
+                          </div>
+                        </div>
                       </div>
                     </div>
 
@@ -1834,7 +2066,9 @@
                           id="ddl_no_of_booking"
                           name="ddl_no_of_booking"
                           class="form-control"
-                        ></select>
+                        >
+                          <option value="1">1</option>
+                        </select>
                       </div>
                     </div>
 
@@ -1851,7 +2085,7 @@
                             id="refreshimg"
                             title="Click to refresh image"
                             ><img
-                              src="https://www.passport.gov.mm/libs/captcha.php?captcha_id=QUPS10"
+                              src="https://www.passport.gov.mm/libs/captcha.php?captcha_id=UGTX86"
                               width="132"
                               height="46"
                               alt="Captcha image"
@@ -1865,6 +2099,8 @@
                             class="form-control"
                             value=""
                             autocomplete="false"
+                            aria-required="true"
+                            aria-invalid="false"
                           />
                         </div>
                       </div>
@@ -1877,7 +2113,7 @@
                         <div
                           id="inComplete"
                           class="errorTxt"
-                          style="font-weight: bold; color: red"
+                          style="font-weight: bold; color: red; display: none"
                         ></div>
                       </div>
                       <div class="col-md-12">
@@ -1886,6 +2122,7 @@
                           class="btn btn-success"
                           style="float: right"
                           id="btnNext"
+                          disabled="disabled"
                         >
                           Next
                         </button>
@@ -1898,7 +2135,7 @@
           </div>
         </div>
       </section>
-      <pre id="lbl_concurrent_count">137</pre>
+      <pre id="lbl_concurrent_count">5791</pre>
     </main>
 
     <link
@@ -1923,7 +2160,7 @@
 
         $("#appdate").attr("autocomplete", "off");
 
-        // $("#upload-form").validate({
+        $("#upload-form").validate({
           rules: {
             appdate: {
               required: true,
@@ -1941,6 +2178,13 @@
             apptime: "လျှောက်ထားလိုသည့်အချိန်ရွေးပါ။ ",
             captcha: "လုံခြုံရေးစိစစ်ရန်စာသားအား မှန်ကန်စွာဖြည့်ပါ။",
           },
+          invalidHandler: function (form, validator) {
+            $.post(PATH + "/user/reg-captcha", function (data) {
+              $("#captchaimage").html(data);
+            });
+            $("#captcha").focus();
+          },
+
           errorElement: "div",
           errorLabelContainer: ".errorTxt",
         });
@@ -1975,19 +2219,19 @@
           $("#ddl_no_of_booking").val(1);
           return false;
         });
-      ;
+      });
 
       $("#btnNext").click(function () {
-        // var selected_Id = $('input[name="apptime"]:checked').attr("id");
+        var selected_Id = $('input[name="apptime"]:checked').attr("id");
 
-        // if (selected_Id == undefined) {
-        //   showpopup(
-        //     "Warning!",
-        //     "Booking ပြုလုပ်လိုသော အချိန်ကိုရွေးပါ။",
-        //     "warning"
-        //   );
-        // } else {
-          if $("#upload-form") {
+        if (selected_Id == undefined) {
+          showpopup(
+            "Warning!",
+            "Booking ပြုလုပ်လိုသော အချိန်ကိုရွေးပါ။",
+            "warning"
+          );
+        } else {
+          if ($("#upload-form").valid()) {
             var ip = "";
             jQuery.ajaxSetup({ async: false });
             $.getJSON("https://api.ipify.org?format=json", function (data) {
@@ -2010,7 +2254,7 @@
               type: "POST",
               url: PATH + "/user/reserve",
               data: post_obj,
-              success: function (data=7) {
+              success: function (data) {
                 if (data == 0) {
                   showpopup("Warning!", "Invalid reserve count.", "warning");
                 } else if (data == 1) {
@@ -2027,6 +2271,10 @@
                   );
                   window.location.href = PATH + "/user/booking";
                 } else if (data == 3) {
+                  $.post(PATH + "/user/reg-captcha", function (data) {
+                    $("#captchaimage").html(data);
+                  });
+                  $("#captcha").focus();
                   showpopup(
                     "Warning!",
                     "လုံခြုံရေးစိစစ်ရန်စာသားအား မှန်ကန်စွာဖြည့်ပါ။",
@@ -2050,7 +2298,7 @@
             });
           }
         }
-      );
+      });
 
       function showpopup(title, message, icon) {
         Swal.fire({
@@ -2318,6 +2566,466 @@
         ip_address = data.ip;
       });
     </script>
+
+    <div
+      id="ui-datepicker-div"
+      class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"
+      style="
+        position: absolute;
+        top: 294.215px;
+        left: 1016.42px;
+        z-index: 1;
+        display: none;
+      "
+    >
+      <div
+        class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"
+      >
+        <a
+          class="ui-datepicker-prev ui-corner-all"
+          data-handler="prev"
+          data-event="click"
+          title="Prev"
+          ><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a
+        ><a
+          class="ui-datepicker-next ui-corner-all"
+          data-handler="next"
+          data-event="click"
+          title="Next"
+          ><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a
+        >
+        <div class="ui-datepicker-title">
+          <span class="ui-datepicker-month">September</span>&nbsp;<span
+            class="ui-datepicker-year"
+            >2022</span
+          >
+        </div>
+      </div>
+      <table class="ui-datepicker-calendar">
+        <thead>
+          <tr>
+            <th scope="col" class="ui-datepicker-week-end">
+              <span title="Sunday">Su</span>
+            </th>
+            <th scope="col"><span title="Monday">Mo</span></th>
+            <th scope="col"><span title="Tuesday">Tu</span></th>
+            <th scope="col"><span title="Wednesday">We</span></th>
+            <th scope="col"><span title="Thursday">Th</span></th>
+            <th scope="col"><span title="Friday">Fr</span></th>
+            <th scope="col" class="ui-datepicker-week-end">
+              <span title="Saturday">Sa</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
+            >
+              &nbsp;
+            </td>
+            <td
+              class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
+            >
+              &nbsp;
+            </td>
+            <td
+              class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
+            >
+              &nbsp;
+            </td>
+            <td
+              class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
+            >
+              &nbsp;
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="1"
+                >1</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="2"
+                >2</a
+              >
+            </td>
+            <td
+              class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+            >
+              <span class="ui-state-default">3</span>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+            >
+              <span class="ui-state-default">4</span>
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="5"
+                >5</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="6"
+                >6</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="7"
+                >7</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="8"
+                >8</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="9"
+                >9</a
+              >
+            </td>
+            <td
+              class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+            >
+              <span class="ui-state-default">10</span>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+            >
+              <span class="ui-state-default">11</span>
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="12"
+                >12</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="13"
+                >13</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="14"
+                >14</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="15"
+                >15</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="16"
+                >16</a
+              >
+            </td>
+            <td
+              class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+            >
+              <span class="ui-state-default">17</span>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+            >
+              <span class="ui-state-default">18</span>
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="19"
+                >19</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="20"
+                >20</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="21"
+                >21</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="22"
+                >22</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="23"
+                >23</a
+              >
+            </td>
+            <td
+              class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+            >
+              <span class="ui-state-default">24</span>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+            >
+              <span class="ui-state-default">25</span>
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="26"
+                >26</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="27"
+                >27</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="28"
+                >28</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="29"
+                >29</a
+              >
+            </td>
+            <td
+              class=" "
+              data-handler="selectDay"
+              data-event="click"
+              data-month="8"
+              data-year="2022"
+            >
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="30"
+                >30</a
+              >
+            </td>
+            <td
+              class="ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
+            >
+              &nbsp;
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
   <loom-container id="lo-engage-ext-container"
     ><loom-shadow classname="resolved"></loom-shadow></loom-container

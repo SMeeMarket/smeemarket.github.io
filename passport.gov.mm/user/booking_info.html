@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" class="">
   <head>
     <meta charset="utf-8" />
@@ -133,6 +134,7 @@
       .swal2-popup.swal2-toast .swal2-html-container {
         margin: 0.5em 1em;
         padding: 0;
+        overflow: initial;
         font-size: 1em;
         text-align: initial;
       }
@@ -1749,7 +1751,7 @@
                   <form
                     id="booking-form"
                     name="booking-form"
-                    action="https://www.passport.gov.mm/user/save-passport-booking"
+                    action="https://www.passport.gov.mm/user/save-passport-booking
                     method="POST"
                     enctype="multipart/form-data"
                     style="margin-bottom: 20px"
@@ -1770,7 +1772,7 @@
                         </div>
                         <div class="col-md-4" style="float: left">
                           <label style="color: blue; font-size: 20px">
-                            18-11-2022 (Friday)
+                            05-09-2022 (Monday)
                           </label>
                         </div>
                       </div>
@@ -1782,7 +1784,7 @@
                         </div>
                         <div class="col-md-4" style="float: left">
                           <label style="color: blue; font-size: 20px">
-                            10:00 AM
+                            8:00 AM
                           </label>
                         </div>
                       </div>
@@ -1802,7 +1804,7 @@
                         type="hidden"
                         name="txt_hid"
                         id="txt_hid"
-                        value="1096864"
+                        value="1118003"
                       />
                       <input
                         type="hidden"
@@ -1820,19 +1822,19 @@
                         type="hidden"
                         name="txt_hreserve_date"
                         id="txt_hreserve_date"
-                        value="2022-11-18"
+                        value="2022-09-05"
                       />
                       <input
                         type="hidden"
                         name="txt_hreservetime"
                         id="txt_hreservetime"
-                        value="10:00:00"
+                        value="08:00:00"
                       />
                       <input
                         type="hidden"
                         name="txt_hkey"
                         id="txt_hkey"
-                        value="278415"
+                        value="363713"
                       />
                     </div>
 
@@ -1879,7 +1881,7 @@
                             value=""
                             maxlength="35"
                             size="35"
-                            
+                            disabled="disabled"
                           />
                         </div>
 
@@ -1894,7 +1896,7 @@
                             value=""
                             maxlength="25"
                             size="25"
-                            
+                            disabled="disabled"
                           />
                         </div>
                       </div>
@@ -1909,12 +1911,12 @@
                               type="text"
                               id="txt_dob"
                               name="txt_dob"
-                              max="20-08-2022"
+                              max="22-08-2022"
                               class="form-control calander hasDatepicker"
                               value=""
                               maxlength="10"
                               size="10"
-                              
+                              disabled="disabled"
                             />
                           </div>
                         </div>
@@ -2002,6 +2004,7 @@
                                 name="nrc_type"
                                 id="birth_cert"
                                 value="3"
+                                disabled=""
                               />
                               <span class="checkmark"></span> မွေးစာရင်း
                             </label>
@@ -2051,53 +2054,51 @@
                                   class="form-control"
                                   style="width: 80px"
                                 >
-                                  <option value="ကကက">ကကက</option>
-                                  <option value="ကခက">ကခက</option>
-                                  <option value="ကတတ">ကတတ</option>
-                                  <option value="ကတန">ကတန</option>
-                                  <option value="ကမတ">ကမတ</option>
-                                  <option value="ကမန">ကမန</option>
-                                  <option value="ကမရ">ကမရ</option>
-                                  <option value="ခရန">ခရန</option>
-                                  <option value="စခန">စခန</option>
-                                  <option value="ဆကခ">ဆကခ</option>
-                                  <option value="ဆကန">ဆကန</option>
+                                  <option value="ကဆန">ကဆန</option>
+                                  <option value="ကပတ">ကပတ</option>
+                                  <option value="ကပတ">ကပတ</option>
+                                  <option value="ခမစ">ခမစ</option>
+                                  <option value="ခအဇ">ခအဇ</option>
+                                  <option value="ငဇန">ငဇန</option>
+                                  <option value="ငသရ">ငသရ</option>
+                                  <option value="စကတ">စကတ</option>
+                                  <option value="စကန">စကန</option>
+                                  <option value="ဇဗသ">ဇဗသ</option>
+                                  <option value="ဇယသ">ဇယသ</option>
+                                  <option value="ညဥန">ညဥန</option>
+                                  <option value="ညဥန">ညဥန</option>
+                                  <option value="တကတ">တကတ</option>
                                   <option value="တကန">တကန</option>
-                                  <option value="တတတ">တတတ</option>
-                                  <option value="တတထ">တတထ</option>
-                                  <option value="တတန">တတန</option>
-                                  <option value="တမန">တမန</option>
-                                  <option value="ထတပ">ထတပ</option>
-                                  <option value="ဒဂဆ">ဒဂဆ</option>
-                                  <option value="ဒဂတ">ဒဂတ</option>
-                                  <option value="ဒဂန">ဒဂန</option>
-                                  <option value="ဒဂမ">ဒဂမ</option>
-                                  <option value="ဒဂရ">ဒဂရ</option>
-                                  <option value="ဒပန">ဒပန</option>
-                                  <option value="ဒလန">ဒလန</option>
-                                  <option value="ပဇတ">ပဇတ</option>
-                                  <option value="ပဘတ">ပဘတ</option>
-                                  <option value="ဗတထ">ဗတထ</option>
-                                  <option value="ဗဟန">ဗဟန</option>
-                                  <option value="မဂတ">မဂတ</option>
-                                  <option value="မဂဒ">မဂဒ</option>
-                                  <option value="မဘန">မဘန</option>
-                                  <option value="မရက">မရက</option>
-                                  <option value="ရကန">ရကန</option>
-                                  <option value="ရပသ">ရပသ</option>
-                                  <option value="လကန">လကန</option>
-                                  <option value="လမတ">လမတ</option>
-                                  <option value="လမန">လမန</option>
-                                  <option value="လသန">လသန</option>
-                                  <option value="လသယ">လသယ</option>
-                                  <option value="သကတ">သကတ</option>
-                                  <option value="သခန">သခန</option>
-                                  <option value="သဃက">သဃက</option>
-                                  <option value="သလန">သလန</option>
-                                  <option value="အစန">အစန</option>
-                                  <option value="အလန">အလန</option>
-                                  <option value="ဥကတ">ဥကတ</option>
-                                  <option value="ဥကမ">ဥကမ</option>
+                                  <option value="တတဥ">တတဥ</option>
+                                  <option value="တသန">တသန</option>
+                                  <option value="ဒခသ">ဒခသ</option>
+                                  <option value="နထက">နထက</option>
+                                  <option value="ပကခ">ပကခ</option>
+                                  <option value="ပဗသ">ပဗသ</option>
+                                  <option value="ပဘန">ပဘန</option>
+                                  <option value="ပမန">ပမန</option>
+                                  <option value="ပသက">ပသက</option>
+                                  <option value="ပဥလ">ပဥလ</option>
+                                  <option value="မကန">မကန</option>
+                                  <option value="မခန">မခန</option>
+                                  <option value="မတရ">မတရ</option>
+                                  <option value="မထလ">မထလ</option>
+                                  <option value="မနတ">မနတ</option>
+                                  <option value="မနမ">မနမ</option>
+                                  <option value="မမန">မမန</option>
+                                  <option value="မရတ">မရတ</option>
+                                  <option value="မရမ">မရမ</option>
+                                  <option value="မလန">မလန</option>
+                                  <option value="မသန">မသန</option>
+                                  <option value="မဟမ">မဟမ</option>
+                                  <option value="ရမသ">ရမသ</option>
+                                  <option value="လဝန">လဝန</option>
+                                  <option value="ဝတန">ဝတန</option>
+                                  <option value="သစန">သစန</option>
+                                  <option value="သပက">သပက</option>
+                                  <option value="အမဇ">အမဇ</option>
+                                  <option value="အမရ">အမရ</option>
+                                  <option value="ဥတသ">ဥတသ</option>
                                 </select>
                               </div>
                               <div
@@ -2880,7 +2881,7 @@
                                 value=""
                                 style="width: 100px"
                                 maxlength="6"
-                                
+                                disabled="disabled"
                               />
                             </div>
                           </div>
@@ -2921,12 +2922,12 @@
                                 </tr>
                               </thead>
                               <tbody id="lst_user">
-                                <!-- <tr>
-                                  <td>မိုးမင်းသိန်း</td>
-                                  <td>ဦးလှဝင်း</td>
-                                  <td>21-04-2000</td>
+                                <tr>
+                                  <td>မိုးမင်း</td>
+                                  <td>ဦးအောင်ဘော်</td>
+                                  <td>21-08-1985</td>
                                   <td>ကျား</td>
-                                  <td>၁၂/အစန(နိုင်)၂၆၄၆၂၈</td>
+                                  <td>၉/ညဥန(နိုင်)၁၇၁၂၈၄</td>
                                   <td>
                                     <a
                                       href="javascript:void(0);"
@@ -2939,7 +2940,7 @@
                                       onclick="removeDocList(0);"
                                       >Remove</a
                                     >
-                                  </td> -->
+                                  </td>
                                 </tr>
                               </tbody>
                               <!-- <tr>
@@ -3485,9 +3486,16 @@
               });
               $("#btnSave").attr("disabled", false);
             } else if (data == -2) {
-              //$('#btnSave').attr('disabled', false);
-              //showpopup('အသိပေးချက်!', 'Finish & Save ကို ထပ်မံနှိပ်ပါ။', 'warning');
-              saveBooking(0);
+              retry_count++;
+              if (retry_count < 5) saveBooking(0);
+              else {
+                $("#btnSave").attr("disabled", false);
+                showpopup(
+                  "အသိပေးချက်!",
+                  "Finish & Save ကို ထပ်မံနှိပ်ပါ။",
+                  "warning"
+                );
+              }
             } else {
               const myArray = data.split("/");
               let word = myArray[1];
@@ -3539,11 +3547,13 @@
         });
       }
 
+      var retry_count;
       $("#btnSave").click(function () {
         if (userList.length == 0) {
           showpopup("Warning!", "'Add' ကို အရင် နှိပ်ပါ။", "warning");
           return;
         }
+        retry_count = 0;
         saveBooking(0);
       });
 
@@ -3714,7 +3724,7 @@
             }, 300000);
           }
         }, 60000);
-      }, 360000);
+      }, 60000);
 
       function showpopup(title, message, icon) {
         Swal.fire({
@@ -3793,8 +3803,8 @@
       class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"
       style="
         position: absolute;
-        top: 235.309px;
-        left: 436.997px;
+        top: 521.316px;
+        left: 440.885px;
         z-index: 1;
         display: none;
       "
@@ -3825,11 +3835,11 @@
             <option value="0">Jan</option>
             <option value="1">Feb</option>
             <option value="2">Mar</option>
-            <option value="3" selected="selected">Apr</option>
+            <option value="3">Apr</option>
             <option value="4">May</option>
             <option value="5">Jun</option>
             <option value="6">Jul</option>
-            <option value="7">Aug</option>
+            <option value="7" selected="selected">Aug</option>
             <option value="8">Sep</option>
             <option value="9">Oct</option>
             <option value="10">Nov</option>
@@ -3918,7 +3928,7 @@
             <option value="1982">1982</option>
             <option value="1983">1983</option>
             <option value="1984">1984</option>
-            <option value="1985">1985</option>
+            <option value="1985" selected="selected">1985</option>
             <option value="1986">1986</option>
             <option value="1987">1987</option>
             <option value="1988">1988</option>
@@ -3933,7 +3943,7 @@
             <option value="1997">1997</option>
             <option value="1998">1998</option>
             <option value="1999">1999</option>
-            <option value="2000" selected="selected">2000</option>
+            <option value="2000">2000</option>
             <option value="2001">2001</option>
             <option value="2002">2002</option>
             <option value="2003">2003</option>
@@ -3998,21 +4008,11 @@
               &nbsp;
             </td>
             <td
-              class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-            >
-              &nbsp;
-            </td>
-            <td
-              class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-            >
-              &nbsp;
-            </td>
-            <td
-              class="ui-datepicker-week-end"
+              class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4022,14 +4022,12 @@
                 >1</a
               >
             </td>
-          </tr>
-          <tr>
             <td
-              class="ui-datepicker-week-end"
+              class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4040,11 +4038,11 @@
               >
             </td>
             <td
-              class=" "
+              class="ui-datepicker-week-end"
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4054,12 +4052,14 @@
                 >3</a
               >
             </td>
+          </tr>
+          <tr>
             <td
-              class=" "
+              class="ui-datepicker-week-end"
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4073,8 +4073,8 @@
               class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4088,8 +4088,8 @@
               class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4103,8 +4103,8 @@
               class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4115,11 +4115,11 @@
               >
             </td>
             <td
-              class="ui-datepicker-week-end"
+              class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4129,14 +4129,12 @@
                 >8</a
               >
             </td>
-          </tr>
-          <tr>
             <td
-              class="ui-datepicker-week-end"
+              class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4147,11 +4145,11 @@
               >
             </td>
             <td
-              class=" "
+              class="ui-datepicker-week-end"
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4161,12 +4159,14 @@
                 >10</a
               >
             </td>
+          </tr>
+          <tr>
             <td
-              class=" "
+              class="ui-datepicker-week-end"
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4180,8 +4180,8 @@
               class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4195,8 +4195,8 @@
               class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4210,8 +4210,8 @@
               class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4222,11 +4222,11 @@
               >
             </td>
             <td
-              class="ui-datepicker-week-end"
+              class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4236,14 +4236,12 @@
                 >15</a
               >
             </td>
-          </tr>
-          <tr>
             <td
-              class="ui-datepicker-week-end"
+              class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4254,11 +4252,11 @@
               >
             </td>
             <td
-              class=" "
+              class="ui-datepicker-week-end"
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4268,12 +4266,14 @@
                 >17</a
               >
             </td>
+          </tr>
+          <tr>
             <td
-              class=" "
+              class="ui-datepicker-week-end"
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4287,8 +4287,8 @@
               class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4302,8 +4302,8 @@
               class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4317,8 +4317,8 @@
               class="ui-datepicker-days-cell-over ui-datepicker-current-day"
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default ui-state-active ui-state-hover"
@@ -4329,11 +4329,11 @@
               >
             </td>
             <td
-              class="ui-datepicker-week-end"
+              class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4343,14 +4343,12 @@
                 >22</a
               >
             </td>
-          </tr>
-          <tr>
             <td
-              class="ui-datepicker-week-end"
+              class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4361,11 +4359,11 @@
               >
             </td>
             <td
-              class=" "
+              class="ui-datepicker-week-end"
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4375,12 +4373,14 @@
                 >24</a
               >
             </td>
+          </tr>
+          <tr>
             <td
-              class=" "
+              class="ui-datepicker-week-end"
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4394,8 +4394,8 @@
               class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4409,8 +4409,8 @@
               class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4424,8 +4424,8 @@
               class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4436,11 +4436,11 @@
               >
             </td>
             <td
-              class="ui-datepicker-week-end"
+              class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4450,14 +4450,12 @@
                 >29</a
               >
             </td>
-          </tr>
-          <tr>
             <td
-              class="ui-datepicker-week-end"
+              class=" "
               data-handler="selectDay"
               data-event="click"
-              data-month="3"
-              data-year="2000"
+              data-month="7"
+              data-year="1985"
             >
               <a
                 class="ui-state-default"
@@ -4468,34 +4466,19 @@
               >
             </td>
             <td
-              class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
+              class="ui-datepicker-week-end"
+              data-handler="selectDay"
+              data-event="click"
+              data-month="7"
+              data-year="1985"
             >
-              &nbsp;
-            </td>
-            <td
-              class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-            >
-              &nbsp;
-            </td>
-            <td
-              class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-            >
-              &nbsp;
-            </td>
-            <td
-              class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-            >
-              &nbsp;
-            </td>
-            <td
-              class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-            >
-              &nbsp;
-            </td>
-            <td
-              class="ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-            >
-              &nbsp;
+              <a
+                class="ui-state-default"
+                href="#"
+                aria-current="false"
+                data-date="31"
+                >31</a
+              >
             </td>
           </tr>
         </tbody>
