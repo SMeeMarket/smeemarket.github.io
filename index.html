@@ -10,7 +10,7 @@
   </head>
   <body>
     <form id="converter">
-      <label for="input-temp">temperature</label>
+      <label for="input-temp">Temperature</label>
       <input type="text" id="input-temp" name="input-temp" value="20" />
       <label for="input-unit">from</label>
       <select id="input-unit" name="input-unit">
@@ -24,7 +24,11 @@
         <option value="f" selected>Fahrenheit</option>
         <option value="k">Kelvin</option>
       </select>
-      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
+      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">
+        <marquee behavior="" direction="">
+          68 F
+        </marquee>
+      </output>
     </form>
     <script src="converter.js"></script>
     <script>
