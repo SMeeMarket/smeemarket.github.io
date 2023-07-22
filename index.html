@@ -7,9 +7,75 @@
     <link rel="shortcut icon" href="logo.png" />
     <link rel="manifest" href="/manifest.json" />
     <title>SMee Market</title>
+    <style>
+      progress{
+        width: 75%;
+      }
+      a{
+        text-decoration-line: none;
+      }
+    </style>
   </head>
   <body>
-    <a href="https://my-learning.w3schools.com/tutorial/html" target="_blank">HTML</a>
+    <fieldset>
+      <legend>SKILLS</legend>
+      <progress id="html" value="1" max="100">1%</progress>
+      <label for="html">
+        <a
+          href="https://my-learning.w3schools.com/tutorial/html"
+          target="_blank"
+          >HTML</a
+        > </label
+      ><br />
+      <progress id="css" value="1" max="100">1%</progress>
+      <label for="css">
+        <a
+          href="https://my-learning.w3schools.com/tutorial/css"
+          target="_blank"
+          >CSS</a
+        > </label
+      ><br />
+      <progress id="bootstrap" value="1" max="100">1%</progress>
+      <label for="bootstrap">
+        <a
+          href="https://my-learning.w3schools.com/tutorial/bootstrap5"
+          target="_blank"
+          >Bootstrap</a
+        > </label
+      >
+      <progress id="tailwind" value="0" max="100">1%</progress>
+      <label for="tailwind">
+        <a
+          href="https://my-learning.w3schools.com/tutorial/html"
+          target="_blank"
+          >Tailwind</a
+        > </label
+      ><br />
+      <progress id="js" value="1" max="100">1%</progress>
+      <label for="js">
+        <a
+          href="https://my-learning.w3schools.com/tutorial/js"
+          target="_blank"
+          >JavaScript</a
+        > </label
+      ><br />
+      <progress id="vue" value="1" max="100">1%</progress>
+      <label for="vue">
+        <a
+          href="https://my-learning.w3schools.com/tutorial/vue"
+          target="_blank"
+          >Vue</a
+        > </label
+      ><br />
+      <progress id="react" value="1" max="100">1%</progress>
+      <label for="react">
+        <a
+          href="https://my-learning.w3schools.com/tutorial/react"
+          target="_blank"
+          >React</a
+        > </label
+      ><br />
+    </fieldset>
 
     <script>
       if ("serviceWorker" in navigator) {
