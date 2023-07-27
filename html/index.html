@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML</title>
+    <mm>HTML</mm>
     <link rel="icon" href="/logo.png" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
       h1 {
         color: blue;
@@ -127,8 +134,115 @@
     <h1 style="background-color: hsla(9, 100%, 64%, 0.5)">
       hsla(9, 100%, 64%, 0.5)
     </h1>
-    <a href="#" target="_parent">_parent - Opens the document in the parent frame</a><br>
-    <a href="#" target="_top">_top - Opens the document in the full body of the window</a><br>
+    <a href="#" target="_parent"
+      >_parent - Opens the document in the parent frame</a
+    ><br />
+    <a href="#" target="_top"
+      >_top - Opens the document in the full body of the window</a
+    ><br />
     <a href="mailto:smeemarket@gmail.com">Send email</a>
+
+    <hr />
+    <input type="text" value="readonly" readonly />
+    <input type="number" name="" id="" />
+    <input type="range" name="" id="" step="50" min="0" max="100" />
+    <hr />
+    <form oninput="x.value=change(a.value)" id="smee">
+      <input class="form-control" type="text" name="a" />
+
+      <!-- <img src="https://smeemarket.github.io/logo.png" name="b" /> -->
+    </form>
+    <output name="x" form="smee" id="output"></output>
+    <!-- <button onclick="show()">Show</button> -->
+    <!-- <script>
+      function show() {
+        var inputText = document.getElementById("output").innerText;
+        if(inputText == 'a'){
+          document.getElementById("output").innerHTML = "<h1>အေ</h1>";
+          document.getElementById("output").hidden = false;
+        }
+      }
+    </script> -->
+
+    <h2>The XMLHttpRequest Object</h2>
+
+    <button type="button" onclick="loadDoc()">Get my CD collection</button>
+    <br /><br />
+    <table id="demo" class="table table-sm table-bordered"></table>
+    <footer style="height: 500px"></footer>
+
+    <script>
+      // function genCharArray(charA, charZ) {
+      //   var a = [],
+      //     i = charA.charCodeAt(0),
+      //     j = charZ.charCodeAt(0);
+      //   for (; i <= j; ++i) {
+      //     a.push(String.fromCharCode(i));
+      //   }
+      //   return a;
+      // }
+      // console.log(genCharArray("a", "z")); // ["a", ..., "z"]
+      function change(av) {
+        if (av == "saw ") {
+          return "စော";
+        }
+        if (av == "စော") {
+          return "SAW ";
+        }
+        if (av == "min ") {
+          return "မင်း";
+        }
+        if (av == "မင်း") {
+          return "MIN ";
+        }
+        if (av == "oo") {
+          return "ဦး";
+        }
+        if (av == "ဦး") {
+          return "OO";
+        }
+        if (av == "saw min ") {
+          return "စောမင်း";
+        }
+        if (av == "စောမင်း") {
+          return "SAW MIN ";
+        }
+        if (av == "saw min oo") {
+          return "စောမင်းဦး";
+        }
+        if (av == "စောမင်းဦး") {
+          return "SAW MIN OO";
+        }
+      }
+
+      function loadDoc() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+          myFunction(this);
+        };
+        xhttp.open("GET", "test.xml");
+        xhttp.send();
+      }
+      function myFunction(xml) {
+        const xmlDoc = xml.responseXML;
+        // console.log(xmlDoc);
+        const en = xmlDoc.getElementsByTagName("en");
+        const mm = xmlDoc.getElementsByTagName("mm");
+        console.log(
+          en[1].childNodes[0].nodeValue,
+          mm[1].childNodes[0].nodeValue
+        );
+        let table = "<tr><th>En</th><th>MM</th></tr>";
+        for (let i = 0; i < x.length; i++) {
+          table +=
+            "<tr><td>" +
+            x[i].getElementsByTagName("en")[0].childNodes[0].nodeValue +
+            "</td><td>" +
+            x[i].getElementsByTagName("mm")[0].childNodes[0].nodeValue +
+            "</td></tr>";
+        }
+        document.getElementById("demo").innerHTML = table;
+      }
+    </script>
   </body>
 </html>
