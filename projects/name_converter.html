@@ -53,12 +53,32 @@
             type="text"
             class="form-control"
             name="a"
-            placeholder="Enter Myanmar"
+            placeholder="Enter in myanmar"
             autofocus
           />
         </form>
       </div>
     </div>
+
+    <script>
+      function genCharArray(charA, charZ) {
+        var a = [],
+          i = charA.charCodeAt(0),
+          j = charZ.charCodeAt(0);
+        for (; i <= j; ++i) {
+          a.push(String.fromCharCode(i));
+        }
+        return a;
+      }
+
+      function isEng(av) {
+        return genCharArray("a", "z").includes(av.toLowerCase());
+      }
+
+      function isMya(av) {
+        return genCharArray("က", "အ").includes(av);
+      }
+    </script>
 
     <script>
       function lan() {
@@ -67,14 +87,14 @@
           document.getElementById("to").innerText = "Myanmar";
           document.getElementById("output").innerText =
             "သင့်ရဲ့ မြန်မာနာမည် ဤနေရာတွင် ပေါ်လာမည်";
-          document.getElementById("input").placeholder = "Enter English";
+          document.getElementById("input").placeholder = "Enter in english";
           document.getElementById("input").value = "";
         } else {
           document.getElementById("from").innerText = "Myanmar";
           document.getElementById("to").innerText = "English";
           document.getElementById("output").innerText =
             "Your english name will be showing here";
-          document.getElementById("input").placeholder = "Enter Myanmar";
+          document.getElementById("input").placeholder = "Enter in myanmar";
           document.getElementById("input").value = "";
         }
       }
@@ -97,22 +117,25 @@
 
         var output = document.getElementById("output");
 
-        var arr = av.toLowerCase().split(" ");
-
-        console.log(arr);
         var show = [];
-
-        for (let p = 0; p < arr.length; p++) {
-          for (let i = 0; i < 33166; i++) {
-            if (arr[p] == en[i].childNodes[0].nodeValue) {
-              show[p] = mm[i].childNodes[0].nodeValue;
+        if (isEng(av.at(0))) {
+          document.getElementById("from").innerText = "English";
+          document.getElementById("to").innerText = "Myanmar";
+          var arr = av.toLowerCase().split(" ");
+          for (let i = 0; i < arr.length; i++) {
+            console.log("hello");
+            for (let p = 0; p < 33167; p++) {
+              if (arr[i] == en[p].childNodes[0].nodeValue) {
+                show[i] = mm[p].childNodes[0].nodeValue;
+              }
             }
-            // if (av == mm[i].childNodes[0].nodeValue) {
-            //   var first = en[i].childNodes[0].nodeValue;
-            // }
           }
-          output.innerHTML = `<h1>${show.join("")}</h1>`;
+        } else {
+          document.getElementById("from").innerText = "Myanmar";
+          document.getElementById("to").innerText = "English";
         }
+
+        output.innerHTML = `<h1 class="text-uppercase">${show.join("")}</h1>`;
       }
     </script>
   </body>
