@@ -4,13 +4,13 @@
   "short_name": "SMee Market",
   "description": "SMee Market Application",
   "start_url": "/",
-  "background_color": "#ff1596",
+  "background_color": "#ffffff",
   "theme_color": "#ff1596",
   "orientation": "any",
   "display": "standalone",
   "icons": [
       {
-          "src": "/brand.png",
+          "src": "/app_logo.png",
           "sizes": "300x300"
       }
   ]
