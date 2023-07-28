@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="bg-body-tertiary">
     <div class="container-fluid">
       <div class="row bg-success">
         <header class="h3 py-2 text-white">Myanmar Name</header>
@@ -101,39 +101,55 @@
     </script>
     <script>
       function converter(av) {
-        const xhttp = new XMLHttpRequest();
+        let xhttp = new XMLHttpRequest();
         xhttp.onload = function () {
           myFunction(this, av);
         };
-        xhttp.open("GET", "word.xml");
-        xhttp.send();
+        if (isEng(av.at(0))) {
+          xhttp.open("GET", "word.xml");
+          xhttp.send();
+        } else {
+          xhttp.open("GET", "word.xml");
+          xhttp.send();
+        }
+      }
+
+      function segmentWithSeparator(text, separator) {
+        if (separator === undefined) {
+          separator = "|";
+        }
+        var result = text.replace(BREAK_PATTERN, separator + "$1");
+        result = result.replace("\u{1039}", "\u{103A}");
+        return result;
       }
 
       function myFunction(xml, av) {
-        const xmlDoc = xml.responseXML;
+        let xmlDoc = xml.responseXML;
 
         var en = xmlDoc.getElementsByTagName("en");
         var mm = xmlDoc.getElementsByTagName("mm");
 
         var output = document.getElementById("output");
 
-        var show = [];
+        var mm_show = [];
+        var en_show;
         if (isEng(av.at(0))) {
           document.getElementById("from").innerText = "English";
           document.getElementById("to").innerText = "Myanmar";
           var arr = av.toLowerCase().split(" ");
           for (let i = 0; i < arr.length; i++) {
-            console.log("hello");
             for (let p = 0; p < 33167; p++) {
               if (arr[i] == en[p].childNodes[0].nodeValue) {
-                show[i] = mm[p].childNodes[0].nodeValue;
+                mm_show[i] = mm[p].childNodes[0].nodeValue;
               }
             }
           }
         } else {
           document.getElementById("from").innerText = "Myanmar";
           document.getElementById("to").innerText = "English";
+          console.log(segmentWithSeparator(av, " "));
         }
+        console.log(en_show.toUpperCase());
 
         output.innerHTML = `<h1 class="text-uppercase">${show.join("")}</h1>`;
       }
