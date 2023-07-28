@@ -13,11 +13,15 @@ function converter(inputValue) {
         document.getElementById('to').innerText = 'Myanmar';
         result = en2mm(inputValue);
         return result;
-    } else {
+    } else if (genCharArray('က', 'အ').includes(inputValue.at(0))) {
         document.getElementById('from').innerText = 'Myanmar';
         document.getElementById('to').innerText = 'English';
         result = mm2en(inputValue);
         return result;
+    } else {
+        document.getElementById('from').innerText = 'Myanmar';
+        document.getElementById('to').innerText = 'English';
+        return "SAW MIN OO";
     }
 }
 
@@ -25,7 +29,7 @@ function langChange(from) {
     if (from === 'Myanmar') {
         document.getElementById('from').innerText = 'English';
         document.getElementById('to').innerText = 'Myanmar';
-        document.getElementById('input').value = 'SAW MIN OO';
+        document.getElementById('input').value = 'SAW MIN OO'; // placeholder ဆိုလျှင် input ထဲမှာ ဒေတာကျန်
         document.getElementById('output').innerText = 'စောမင်းဦး';
     } else {
         document.getElementById('from').innerText = 'Myanmar';
