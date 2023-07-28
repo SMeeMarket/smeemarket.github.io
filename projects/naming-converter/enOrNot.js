@@ -29,12 +29,14 @@ function langChange(from) {
     if (from === 'Myanmar') {
         document.getElementById('from').innerText = 'English';
         document.getElementById('to').innerText = 'Myanmar';
-        document.getElementById('input').value = 'SAW MIN OO'; // placeholder ဆိုလျှင် input ထဲမှာ ဒေတာကျန်
+        document.getElementById('input').value = '';
+        document.getElementById('input').placeholder = 'SAW MIN OO';
         document.getElementById('output').innerText = 'စောမင်းဦး';
     } else {
         document.getElementById('from').innerText = 'Myanmar';
         document.getElementById('to').innerText = 'English';
-        document.getElementById('input').value = 'စောမင်းဦး';
+        document.getElementById('input').value = '';
+        document.getElementById('input').placeholder = 'စောမင်းဦး';
         document.getElementById('output').innerText = 'SAW MIN OO';
     }
 }
