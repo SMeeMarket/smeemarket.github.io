@@ -6,12 +6,12 @@
   "start_url": "/",
   "background_color": "#ff1596",
   "theme_color": "#ff1596",
-  "orientation": "portrait-secondary",
+  "orientation": "any",
   "display": "standalone",
   "icons": [
       {
           "src": "logo.png",
-          "sizes": "300x300"
+          "sizes": "500x500"
       }
   ]
 }
