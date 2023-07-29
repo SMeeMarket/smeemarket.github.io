@@ -32,6 +32,5 @@ function en2mm(input) {
         }
         return seg
     });
-    console.log(res);
-    return res;
+    return res.toUpperCase();
 }
