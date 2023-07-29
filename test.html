@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        display: grid;
+        margin: 0;
+        height: 100vh;
+        grid-template:
+          "messages" 1fr
+          "input" auto
+          "keyboard" env(keyboard-inset-height, 0px);
+      }
+    </style>
+    <ul id="messages"></ul>
+    <input type="text" />
+    <script>
+      if ("virtualKeyboard" in navigator) {
+        navigator.virtualKeyboard.overlaysContent = true;
+
+        navigator.virtualKeyboard.addEventListener(
+          "geometrychange",
+          (event) => {
+            const { x, y, width, height } = event.target.boundingRect;
+          }
+        );
+
+        const editor = document.getElementById("editor");
+        editor.addEventListener("dblclick", () => {
+          navigator.virtualKeyboard.show();
+        });
+      }
+    </script>
+  </body>
+</html>
