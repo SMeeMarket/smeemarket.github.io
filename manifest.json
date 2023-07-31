@@ -9,7 +9,7 @@
   "icons": [
       {
           "src": "brand.png",
-          "sizes": "512x512",
+          "sizes": "300x300",
           "purpose": "maskable"
       }
   ]
