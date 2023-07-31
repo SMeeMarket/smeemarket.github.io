@@ -6,9 +6,18 @@
     <title>Document</title>
   </head>
   <body>
-    <li id="contacts">Contacts</li>
-    <button id="select-contacts">Select contacts</button>
+    <b>Demo</b><br />
+    <button
+      type="button"
+      id="select-contacts"
+      style="padding: 5px; background-color: powderblue; border: none"
+    >
+      Select contacts</button
+    ><br /><br />
+    <b>Selected contacts</b><br />
+    <textarea name="" id="contacts" cols="30" rows="10"></textarea>
     <script>
+
       if('contacts' in navigator && 'ContactsManager' in window) {
         const props = await navigator.contacts.getProperties();
         const list = document.querySelector('#contacts');
