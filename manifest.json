@@ -1,8 +1,8 @@
 {
   "lang": "en-us",
-  "name": "Welcome to SMee Market 1",
+  "name": "SMee Market PWA",
   "short_name": "SMee Market",
-  "description": "SMee Market Application",
+  "description": "SMee Market Progressive Web App",
   "start_url": "/",
   "orientation": "natural",
   "display": "standalone",
