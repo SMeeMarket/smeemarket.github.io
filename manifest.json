@@ -3,7 +3,7 @@
   "name": "Welcome to SMee Market",
   "short_name": "SMee Market",
   "description": "SMee Market Application",
-  "start_url": "/material-dashboard-master",
+  "start_url": "/",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "orientation": "natural",
