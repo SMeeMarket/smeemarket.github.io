@@ -166,8 +166,14 @@
 
     <h2>The XMLHttpRequest Object</h2>
 
-    <button type="button" onclick="loadDoc()">Get my CD collection</button>
+    <button type="button" onclick="loadDoc()">LoadDoc</button>
     <br /><br />
+
+    <button type="button" onclick="show()">Show</button>
+
+
+
+    <object id="object" width="100%" height="1000px" data="https://smeemarket.github.io" hidden></object>
     <table id="demo" class="table table-sm table-bordered"></table>
     <footer style="height: 500px"></footer>
 
@@ -213,6 +219,11 @@
         if (av == "စောမင်းဦး") {
           return "SAW MIN OO";
         }
+      }
+
+      function show(){
+        let state = document.getElementById('object').hidden;
+        document.getElementById('object').hidden = state ? false : true;
       }
 
       function loadDoc() {

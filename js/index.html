@@ -4,10 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/logo.png" />
-    <mm>JavaScript</mm>
+    <title>JavaScript</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <h1>JavaScript</h1>
+    <h2>
+      Create a html file and save it to a local computer using JavaScript.
+    </h2>
+    <p>Enter the file content:-</p>
+    <input
+    style="width: 90%; height: 30px; font-size: larger;"
+      id="input"
+      type="text"
+      oninput="code(this)"
+      placeholder="h"
+    />
+    <br />
+    <button onclick="downloadFile()">save File</button>
+    <a href="sample.html">sample.html</a>
+    <br />
+    <output id="output">Type 'h' for heading tag.</output>
+    <script src="code.js"></script>
+    <script>
+      const downloadFile = () => {
+        const link = document.createElement("a");
+        const content = document.querySelector("input").value;
+        const file = new Blob([content], { type: "text/html" });
+        link.href = URL.createObjectURL(file);
+        link.download = "sample.html";
+        link.click();
+        URL.revokeObjectURL(link.href);
+      };
+    </script>
   </body>
 </html>
