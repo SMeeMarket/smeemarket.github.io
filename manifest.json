@@ -4,7 +4,7 @@
   "short_name": "SMee Market",
   "description": "SMee Market PWA",
   "start_url": "/",
-  "orientation": "natural",
+  "orientation": "any",
   "display": "standalone",
   "icons": [
       {
