@@ -4,8 +4,6 @@
   "short_name": "SMee Market",
   "description": "SMee Market Application",
   "start_url": "/",
-  "background_color": "",
-  "theme_color": "",
   "orientation": "natural",
   "display": "standalone",
   "icons": [
