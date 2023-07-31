@@ -5,13 +5,13 @@
   "description": "SMee Market Application",
   "start_url": "/material-dashboard-master",
   "background_color": "#ffffff",
-  "theme_color": "#ff1596",
+  "theme_color": "#ffffff",
   "orientation": "natural",
   "display": "standalone",
   "icons": [
       {
           "src": "logo_app.png",
-          "sizes": "300x300"
+          "sizes": "500x500"
       }
   ]
 }
