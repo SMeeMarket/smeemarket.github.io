@@ -8,9 +8,8 @@
   "display": "standalone",
   "icons": [
       {
-          "src": "brand.png",
-          "sizes": "300x300",
-          "purpose": "maskable"
+          "src": "logo_app.png",
+          "sizes": "300x300"
       }
   ]
 }
