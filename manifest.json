@@ -5,6 +5,7 @@
   "description": "SMee Market PWA",
   "start_url": "/",
   "background_color": "#18191A",
+  "theme_color": "#ffffff",
   "orientation": "any",
   "display": "standalone",
   "icons": [
