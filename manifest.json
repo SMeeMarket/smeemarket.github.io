@@ -1,11 +1,11 @@
 {
   "lang": "en-us",
-  "name": "Welcome to SMee Market",
+  "name": "Welcome to SMee Market 1",
   "short_name": "SMee Market",
   "description": "SMee Market Application",
   "start_url": "/",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "",
+  "theme_color": "",
   "orientation": "natural",
   "display": "standalone",
   "icons": [
