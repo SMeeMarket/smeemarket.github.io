@@ -1,369 +1,250 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,viewport-fit=cover"
-    />
-    <meta name="description" content="Free Web tutorials" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <meta name="author" content="SMee" />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: light)"
-      content="#ffffff"
-    />
-    <!-- app top color in light mode of device -->
 
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#242526"
-    />
-    <!-- app top color in dark mode of device -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="viewport-fit=cover" />
+  <meta name="description" content="Free Web tutorials" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="author" content="SMee" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+  <!-- app top color in light mode of device -->
 
-    <link rel="icon" href="logo.png" />
-    <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#242526" />
+  <!-- app top color in dark mode of device -->
 
-    <link href="/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="icon" href="logo.png" />
+  <link rel="manifest" href="manifest.json" />
 
-    <script src="/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
-    <title>SMee Market</title>
-    <style>
-      @media (prefers-color-scheme: light) {
-        .dark {
-          color: #242526;
-          background-color: #ffffff;
-        }
+  <link href="/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <script src="/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+  <title>SMee Market</title>
+  <style>
+    @media (prefers-color-scheme: light) {
+      .dark {
+        color: #242526;
+        background-color: #ffffff;
       }
+    }
 
-      @media (prefers-color-scheme: dark) {
-        .dark {
-          background: #242526;
-          color: #ffffff;
-        }
+    @media (prefers-color-scheme: dark) {
+      .dark {
+        background: #242526;
+        color: #ffffff;
       }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
-  <body style="height: 1000px" class="light dark">
-    <!-- header -->
-    <header
-      class="container-fluid text-white text-center py-lg-1"
-      style="background-color: #ff1596"
-    >
-      This is header for changed.
-    </header>
-    <!-- nav -->
+<body style="height: 1000px" class="light dark">
+  <!-- header -->
+  <header class="container-fluid text-white text-center py-lg-1" style="background-color: #ff1596">
+    This is header for changed.
+  </header>
+  <!-- nav -->
 
-    <nav class="navbar navbar-expand-sm bg bg-white sticky-top mb-2">
-      <div class="container col-lg-6">
-        <!-- Nav pills -->
-        <ul class="nav nav-pills" role="tablist">
-          <li class="nav-item me-auto">
-            <a class="navbar-brand" href="#">
-              <img
-                src="/brand.png"
-                alt="Logo"
-                style="width: 40px"
-                class="rounded"
-              />
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="pill" href="#home"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#skill">Skill</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#practice"
-              >Practice</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#contact"
-              >Contact</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#project"
-              >Project</a
-            >
-          </li>
-        </ul>
+  <nav class="navbar navbar-expand-sm bg bg-white sticky-top mb-2">
+    <div class="container col-lg-6">
+      <!-- Nav pills -->
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item me-auto">
+          <a class="navbar-brand" href="#">
+            <img src="/brand.png" alt="Logo" style="width: 40px" class="rounded" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#skill">Skill</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#practice">Practice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#project">Project</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active p-5 text-center">
+      <h2 class="text-uppercase">home2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus aliquid numquam vel fugit alias,
+        voluptatem fuga praesentium sunt labore ipsa tenetur! Ipsam quasi ab cum, dolorum quis consequatur at?
+    </div>
+
+    <div id="about" class="container tab-pane fade p-5 text-center">
+      <h2 class="text-uppercase" id="about">about</h2>
+      <em class="display-1">SAW MIN OO</em>
+      <h2 class="text-uppercase">Web Developer</h2>
+    </div>
+
+    <div id="skill" class="container tab-pane fade p-5 col-lg-6">
+      <h2 class="text-uppercase" id="skill">skill</h2>
+
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 40%">
+          40%
+        </div>
+        <a href="https://my-learning.w3schools.com/tutorial/html" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none">HTML</a>
       </div>
-    </nav>
+      <br />
 
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div id="home" class="container tab-pane active p-5 text-center">
-        <h2 class="text-uppercase">home</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus
-          aliquid numquam vel fugit alias, voluptatem fuga praesentium sunt
-          labore ipsa tenetur! Ipsam quasi ab cum, dolorum quis consequatur at?
-        </p>
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
+        </div>
+        <a href="https://my-learning.w3schools.com/tutorial/css" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">css</a>
       </div>
+      <br />
 
-      <div id="about" class="container tab-pane fade p-5 text-center">
-        <h2 class="text-uppercase" id="about">about</h2>
-        <em class="display-1">SAW MIN OO</em>
-        <h2 class="text-uppercase">Web Developer</h2>
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
+        </div>
+        <a href="https://my-learning.w3schools.com/tutorial/bootstrap5" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">bootstrap5</a>
       </div>
+      <br />
 
-      <div id="skill" class="container tab-pane fade p-5 col-lg-6">
-        <h2 class="text-uppercase" id="skill">skill</h2>
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 40%"
-          >
-            40%
-          </div>
-          <a
-            href="https://my-learning.w3schools.com/tutorial/html"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none"
-            >HTML</a
-          >
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
         </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://my-learning.w3schools.com/tutorial/css"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >css</a
-          >
-        </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://my-learning.w3schools.com/tutorial/bootstrap5"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >bootstrap5</a
-          >
-        </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://my-learning.w3schools.com/tutorial/sass"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >sass</a
-          >
-        </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://tailwind.com"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >tailwind</a
-          >
-        </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://my-learning.w3schools.com/tutorial/js"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >javascript</a
-          >
-        </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://my-learning.w3schools.com/tutorial/vue"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >vue</a
-          >
-        </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://my-learning.w3schools.com/tutorial/react"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >react</a
-          >
-        </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://my-learning.w3schools.com/tutorial/angular"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >angular</a
-          >
-        </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://my-learning.w3schools.com/tutorial/mysql"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >mysql</a
-          >
-        </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://my-learning.w3schools.com/tutorial/php"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >php</a
-          >
-        </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://laravel.com"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >laravel</a
-          >
-        </div>
-        <br />
-
-        <div class="progress">
-          <div
-            class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white"
-            style="width: 0%"
-          >
-            0%
-          </div>
-          <a
-            href="https://my-learning.w3schools.com/tutorial/git"
-            target="_blank"
-            class="mx-auto badge bg-success text-decoration-none text-uppercase"
-            >git</a
-          >
-        </div>
+        <a href="https://my-learning.w3schools.com/tutorial/sass" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">sass</a>
       </div>
+      <br />
 
-      <div id="practice" class="container tab-pane fade p-5 text-center">
-        <h2 class="text-uppercase" id="practice">practice</h2>
-        <a href="html/index.html">HTML</a> | <a href="css/index.html">CSS</a> |
-        <a href="bootstrap5/index.html">Bootstrap5</a> |
-        <a href="sass/index.html">SASS</a> |
-        <a href="tailwind/index.html">Tailwind</a> |
-        <a href="js/index.html">JavaScript</a> |
-        <a href="jquery/index.html">Jquery</a> |
-        <a href="vue/index.html">Vue</a> |
-        <a href="react/index.html">React</a> |
-        <a href="angular/index.html">Angular</a> |
-        <a href="mysql/index.html">MySQL</a> |
-        <a href="php/index.html">PHP</a> |
-        <a href="laravel/index.html">Laravel</a> |
-        <a href="git/index.html">Git</a>
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
+        </div>
+        <a href="https://tailwind.com" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">tailwind</a>
       </div>
+      <br />
 
-      <div id="contact" class="container tab-pane fade p-5 text-center">
-        <h2 class="text-uppercase" id="contact">contact</h2>
-        <a href="mailto:smeemarket@gmail.com">smeemarket@gmail.com</a>
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
+        </div>
+        <a href="https://my-learning.w3schools.com/tutorial/js" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">javascript</a>
       </div>
+      <br />
 
-      <div id="project" class="container tab-pane fade p-5 text-center">
-        <h2 class="text-uppercase" id="project">project</h2>
-        <a href="projects/naming-converter/index.html">Naming Converter</a
-        ><br />
-        <a href="/material-dashboard-master/index.html">Dashboard</a>
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
+        </div>
+        <a href="https://my-learning.w3schools.com/tutorial/vue" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">vue</a>
+      </div>
+      <br />
+
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
+        </div>
+        <a href="https://my-learning.w3schools.com/tutorial/react" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">react</a>
+      </div>
+      <br />
+
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
+        </div>
+        <a href="https://my-learning.w3schools.com/tutorial/angular" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">angular</a>
+      </div>
+      <br />
+
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
+        </div>
+        <a href="https://my-learning.w3schools.com/tutorial/mysql" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">mysql</a>
+      </div>
+      <br />
+
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
+        </div>
+        <a href="https://my-learning.w3schools.com/tutorial/php" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">php</a>
+      </div>
+      <br />
+
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
+        </div>
+        <a href="https://laravel.com" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">laravel</a>
+      </div>
+      <br />
+
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated text-white" style="width: 0%">
+          0%
+        </div>
+        <a href="https://my-learning.w3schools.com/tutorial/git" target="_blank"
+          class="mx-auto badge bg-success text-decoration-none text-uppercase">git</a>
       </div>
     </div>
-  </body>
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js", { scope: "/" });
-    }
-  </script>
+
+    <div id="practice" class="container tab-pane fade p-5 text-center">
+      <h2 class="text-uppercase" id="practice">practice</h2>
+      <a href="html/index.html">HTML</a> | <a href="css/index.html">CSS</a> |
+      <a href="bootstrap5/index.html">Bootstrap5</a> |
+      <a href="sass/index.html">SASS</a> |
+      <a href="tailwind/index.html">Tailwind</a> |
+      <a href="js/index.html">JavaScript</a> |
+      <a href="jquery/index.html">Jquery</a> |
+      <a href="vue/index.html">Vue</a> |
+      <a href="react/index.html">React</a> |
+      <a href="angular/index.html">Angular</a> |
+      <a href="mysql/index.html">MySQL</a> |
+      <a href="php/index.html">PHP</a> |
+      <a href="laravel/index.html">Laravel</a> |
+      <a href="git/index.html">Git</a>
+    </div>
+
+    <div id="contact" class="container tab-pane fade p-5 text-center">
+      <h2 class="text-uppercase" id="contact">contact</h2>
+      <a href="mailto:smeemarket@gmail.com">smeemarket@gmail.com</a>
+    </div>
+
+    <div id="project" class="container tab-pane fade p-5 text-center">
+      <h2 class="text-uppercase" id="project">project</h2>
+      <a href="projects/naming-converter/index.html">Naming Converter</a><br>
+      <a href="/material-dashboard-master/index.html">Dashboard</a>
+    </div>
+  </div>
+</body>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/sw.js", { scope: "/" });
+  }
+</script>
+
 </html>
