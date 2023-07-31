@@ -6,33 +6,46 @@
     <title>Document</title>
   </head>
   <body>
-    <style>
-      body {
-        display: grid;
-        margin: 0;
-        height: 100vh;
-        grid-template:
-          "messages" 1fr
-          "input" auto
-          "keyboard" env(keyboard-inset-height, 0px);
-      }
-    </style>
-    <ul id="messages"></ul>
-    <input type="text" />
+    <li id="contacts">Contacts</li>
+    <button id="select-contacts">Select contacts</button>
     <script>
-      if ("virtualKeyboard" in navigator) {
-        navigator.virtualKeyboard.overlaysContent = true;
+      if('contacts' in navigator && 'ContactsManager' in window) {
+        const props = await navigator.contacts.getProperties();
+        const list = document.querySelector('#contacts');
+        const button = document.querySelector('#select-contacts');
 
-        navigator.virtualKeyboard.addEventListener(
-          "geometrychange",
-          (event) => {
-            const { x, y, width, height } = event.target.boundingRect;
-          }
-        );
+        list.innerHTML = '';
 
-        const editor = document.getElementById("editor");
-        editor.addEventListener("dblclick", () => {
-          navigator.virtualKeyboard.show();
+        const showContacts = contacts => {
+          const html = contacts.reduce((html, contact) => {
+            const names = contact.name.join(', ');
+            const emails = contact.email.join(', ');
+            const telephone = contact.tel.join(', ');
+
+            return `${html}
+              <p>
+                <span>
+                  <i class="material-icons">person</i>
+                  <strong>${names}</strong><br>
+                </span>
+                <span>
+                  <i class="material-icons">mail_outline</i>
+                  ${emails}<br>
+                </span>
+                <span>
+                  <i class="material-icons">phone</i>
+                  ${telephone}</p>
+                </span>
+              `;
+            }, ``);
+
+          list.innerHTML = html;
+        };
+
+        button.addEventListener('click', async e => {
+          const contacts = await navigator.contacts.select(props, {multiple: true});
+
+          showContacts(contacts);
         });
       }
     </script>
