@@ -11,7 +11,7 @@
   "icons": [
       {
           "src": "logo_app.png",
-          "sizes": "500x500"
+          "sizes": "300x300"
       }
   ]
 }
