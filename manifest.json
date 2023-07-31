@@ -1,15 +1,16 @@
 {
   "lang": "en-us",
-  "name": "SMee Market PWA",
+  "name": "Welcome to SMee Market",
   "short_name": "SMee Market",
-  "description": "SMee Market Progressive Web App",
+  "description": "SMee Market PWA",
   "start_url": "/",
   "orientation": "natural",
   "display": "standalone",
   "icons": [
       {
-          "src": "logo_app.png",
-          "sizes": "300x300"
+          "src": "brand.png",
+          "sizes": "512x512",
+          "purpose": "maskable"
       }
   ]
 }
