@@ -1,9 +1,9 @@
 {
   "lang": "en-us",
-  "name": "SMee Market",
+  "name": "Welcome to SMee Market",
   "short_name": "SMee Market",
   "description": "SMee Market Application",
-  "start_url": "/",
+  "start_url": "/material-dashboard-master",
   "background_color": "#ffffff",
   "theme_color": "#ff1596",
   "orientation": "natural",
