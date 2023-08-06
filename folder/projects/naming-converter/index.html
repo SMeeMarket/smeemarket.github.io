@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/logo.png" />
+  <title>Naming Converter</title>
+  <link rel="icon" href="/logo.png" />
+  <link
+      href="/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="../virtual-keyboard-using-html5/css/style.css" rel="stylesheet">
+  </link>
+  <script src="../virtual-keyboard-using-html5/js/keyboard.js"></script>
+  <script src="syllable.js"></script>
+  <script src="mmen.js"></script>
+  <script src="enOrNot.js"></script>
+</head>
+
+<body class="bg-body-tertiary align-content-between" style="height: 100vh">
+  <div class="container-fluid">
+    <div class="row bg-success">
+      <header class="h3 py-2 text-white mt-1 col-lg-8 col-md-10 col-sm-10 mx-auto">
+        Naming Converter
+      </header>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-5 d-flex align-items-center justify-content-end fs-5" id="from">
+        Myanmar / English
+      </div>
+      <div class="col-2 d-flex justify-content-center">
+        <button onclick="langChange(this)" class="btn btn-success" disabled>
+          <i class="fa-solid fa-chevron-right mx-2"></i>
+        </button>
+      </div>
+      <div class="col-5 d-flex align-items-center fs-5" id="to">Korean</div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-4">
+      <strong id="output"
+        class="text-bg-success rounded-5 p-3 display-6 shadow">
+        쏘민우
+      </strong>
+    </div>
+
+    <div class="row mt-3">
+      <div class="h3 py-2 text-white mt-1 col-lg-8 col-md-10 col-sm-10 mx-auto">
+        <input onkeyup="converter(this)" 
+          onkeypress='javascript: var keycode = keyPressed(event);
+          // console.log(keyPressed());
+            return true' 
+          id="input" type="text"
+          class="form-control fs-5 p-2 shadow border-0 use-keyboard-input"
+          placeholder="စောမင်းဦး / SAW MIN OO"
+          autofocus />
+      </div>
+    </div>
+
+
+  </div>
+  <div class="bg-success-subtle">
+
+    <!-- <footer class="text-center p-3">footer</footer> -->
+  </div>
+</body>
+<!-- <script type="text/javascript">
+  function keyPressed(){
+  var key = event.keyCode || event.which ;
+  return key;
+  }
+ 
+</script> -->
+<script src="buttonSound.js"></script>
+
+</html>
