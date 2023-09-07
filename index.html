@@ -14,27 +14,69 @@
     </style>
   </head>
   <body>
-    <fieldset style="width: fit-content">
+    <fieldset style="width: fit-content; margin: auto">
       <legend style="text-align: center; font-size: xx-large">Mail</legend>
-      <form action="https://formsubmit.co/smeemarket@gmail.com" method="POST">
-          <input type="hidden" name="_next" value="https://smeemarket.github.io/thanks.html"/>
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_subject" value="Your Subject" />
-          <input type="hidden" name="_cc" value="sawminoo2023@gmail.com" />
-           <!-- multiple ok eg. "mail1, mail2" etc -->
-          <input type="hidden" name="_autoresponse" value="Thanks for contact to me and will reply ...">
+      <form
+        action="https://formsubmit.co/smeemarket@gmail.com"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <input
+          type="hidden"
+          name="_next"
+          value="https://smeemarket.github.io/thanks.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_subject" value="Your Subject" />
+        <input type="hidden" name="_cc" value="sawminoo2023@gmail.com" />
+        <!-- multiple ok eg. "mail1, mail2" etc -->
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="Thanks for contact to me and will reply ..."
+        />
         <label for="name">နာမည်</label><br />
-        <input type="text" name="name" size="50" />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          size="50"
+          placeholder="သင်၏နာမည်"
+          autofocus
+          required
+          autocomplete="off"
+          minlength="3"
+          maxlength="30"
+          onkeyup="converter(this)"
+        />
         <br /><br />
         <label for="email">Email</label><br />
-        <input type="email" name="email" size="50" />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          size="50"
+          placeholder="your email"
+          required
+          autocomplete="off"
+          maxlength="50"
+        />
+        <br /><br />
+        <label for="photo">File</label><br />
+        <input type="file" name="attachment" accept=".pdf" />
         <br /><br />
         <label for="message">메시지</label><br />
-        <textarea name="message" id="" cols="50" rows="5"></textarea>
+        <textarea name="message" id="" rows="10" cols="50" required minlength="10" maxlength="500"></textarea>
         <br /><br />
         <input type="submit" value="SUBMIT" />
       </form>
     </fieldset>
+
+    <script>
+      function converter(x){
+        document.getElementById('name').value = x.value.toUpperCase(); 
+      }
+    </script>
   </body>
 </html>
