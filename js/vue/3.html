@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue - 3</title>
+    <style>
+      #app {
+        border: dashed black 1px;
+        width: 250px;
+        padding: 0 10px 10px 10px;
+      }
+
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    &larr;<a href="./">Vue</a> - 3
+    <h1>'v-bind' Image Source Example</h1>
+
+    <div id="app">
+      <p>
+        The browser finds the 'src' attribute value from the Vue instance with
+        the use of 'v-bind'.
+      </p>
+      <img v-bind:src="url" />
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      const app = Vue.createApp({
+        data() {
+          return {
+            url: "https://w3schools.com/vue/img_beach3.jpg",
+          };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>
