@@ -12,6 +12,9 @@
     <?php
     echo "Hello World!";
     ?>
+    <br><br>
+
+    <a href="/1.php">1</a>
 
 </body>
 
