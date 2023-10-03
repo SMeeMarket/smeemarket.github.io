@@ -14,7 +14,8 @@
     ?>
     <br><br>
 
-    <a href="/1.php">1</a>
+    <a href="/1.php">1</a> |
+    <a href="/2.php">2</a> |
 
 </body>
 
