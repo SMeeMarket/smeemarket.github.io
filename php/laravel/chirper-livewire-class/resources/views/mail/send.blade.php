@@ -1,1 +1,0 @@
-<p>{{ $myMessage }}</p>
